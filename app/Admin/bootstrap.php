@@ -38,4 +38,52 @@ Admin::menu(function (Menu $menu) {
             'roles'         => 'test-roles', // 与角色绑定
         ],
     ]);
+
+    $menu->add([
+        [
+            'id'            => '1', // 此id只要保证当前的数组中是唯一的即可
+            'title'         => '班费管理',
+            'icon'          => 'feather icon-award',
+            'uri'           => '/classfee',
+            'parent_id'     => 0,
+            'permission_id' => 'test', // 与权限绑定
+            'roles'         => 'test-roles', // 与角色绑定
+        ],
+        [
+            'id'            => '2', // 此id只要保证当前的数组中是唯一的即可
+            'title'         => '账单管理',
+            'icon'          => 'feather icon-award',
+            'uri'           => '/classfee',
+            'parent_id'     => 1,
+            'permission_id' => 'test', // 与权限绑定
+            'roles'         => 'test-roles', // 与角色绑定
+        ],
+        [
+            'id'            => '3', // 此id只要保证当前的数组中是唯一的即可
+            'title'         => '交费周期',
+            'icon'          => '',
+            'uri'           => '/classfee/cycle',
+            'parent_id'     => 1 ,
+            'permission_id' => 'test', // 与权限绑定
+            'roles'         => 'test-roles', // 与角色绑定
+        ],
+        [
+            'id'            => '4', // 此id只要保证当前的数组中是唯一的即可
+            'title'         => '交费情况',
+            'icon'          => '',
+            'uri'           => '/classfee/payer',
+            'parent_id'     => 1,
+            'permission_id' => 'test', // 与权限绑定
+            'roles'         => 'test-roles', // 与角色绑定
+        ],
+        [
+            'id'            => '5', // 此id只要保证当前的数组中是唯一的即可
+            'title'         => '退费处理',
+            'icon'          => '',
+            'uri'           => '/classfee',
+            'parent_id'     => 1,
+            'permission_id' => 'test', // 与权限绑定
+            'roles'         => 'test-roles', // 与角色绑定
+        ],
+    ]);
 });
