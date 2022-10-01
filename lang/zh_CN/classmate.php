@@ -1,8 +1,8 @@
-<?php 
+<?php
 return [
     'labels' => [
-        'Classmate' => 'Classmate',
-        'classmate' => 'Classmate',
+        'Classmate' => '同学',
+        'classmate' => '同学',
     ],
     'fields' => [
         'name' => '姓名',
@@ -11,6 +11,7 @@ return [
         'type' => '关系类型',
         'dormitory' => '宿舍',
         'remark' => '备注',
+        'job' => '职务'
     ],
     'options' => [
     ],

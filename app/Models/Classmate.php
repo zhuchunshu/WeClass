@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Classmate extends Model
 {
-	use HasDateTimeFormatter;    }
+	use HasDateTimeFormatter;
+    protected $table = 'classmates';
+
+    protected $fillable = ['id','name','phone','sex','type','dormitory','remark','created_at','update_at','job'];
+}
